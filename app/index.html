@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bentuk Rumah A-Frame di Glitch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    
+    <a-scene>
+      <a-assets>
+    <img id="boxTexture" src="https://cdn.glitch.global/6cb26a19-ce12-483e-99e4-632504aa06a7/house-2606818_1280.jpg?v=1678643134933">
+    <img id="coneTexture" src="https://cdn.glitch.global/6cb26a19-ce12-483e-99e4-632504aa06a7/roof-7612027_640.jpg?v=1678643471446">
+    <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+  </a-assets>
+      
+      <a-entity position="0 1 -12">
+        <a-box src="#boxTexture" height="4" width="6" depth="6"></a-box>
+        <a-cone position="0 3-2" color="gray" height="3" radius-bottom="5" radius-top="3"></a-cone>
+        <a-plane position="0 -2 0" color="#000000" rotation="-90 0 0" width="50" height="50"
+        repeat="10 10"></a-plane>
+        <a-sky src="#skyTexture"></a-sky>
+      
+    
+      </a-entity>
+    </a-scene>zz
+  </body>
+</html>
